@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F4F9F9;
+    gap: 4px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 30px;
+}
+
+.icons {
+    display: flex;
+    width: 100%;
+    margin-left: 300px;
+
+    justify-content: center;
+    padding: 10px;
+}
+
+.icons>* {
+    margin-right: 20px;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.user img {
+    width: 50px;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+.buttons button {
+    padding: 4px 8px;
+    margin: 15px;
+
+    background-color: rgb(17, 122, 209);
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: minmax(250px, 350px) 2fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+main {
+    background-color: #DDDDDD;
+    width: 100%;
+    grid-column: 2/3;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+section {
+    background-color: rgb(17, 122, 209);
+    grid-row: 1/3;
+
+}
+
+.Dashboard {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Dashboard div {
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.Dashboard div:nth-child(8) {
+    margin-top: 40px;
+}
+
+.Dashboard div:nth-child(1) {
+    align-self: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+
+
+}
+
+.projects>div {
+    min-width: 300px;
+    max-width: 500px;
+
+    margin-left: 50px;
+
+
+}
+
+.projects>div>* {
+    padding: 5px;
+    padding-left: 30px;
+    background-color: #F4F9F9;
+    border-left: 5px solid #FFA45B;
+}
+
+.share {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: #F4F9F9;
+    padding: 40px;
+    margin-bottom: 50px;
+    max-height: 70%;
+}
+
+.trending {
+    background-color: #F4F9F9;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.trending>div {
+    padding-bottom: 10px;
+    display: flex;
+
+
+
+}
+
+input {
+    border: none;
+    background-color: #A6A9B6;
+    border-radius: 8px;
+}
+
+.trending img {
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Dashboard img {
+    width: 30px;
+    align-self: center;
+    padding-right: 9px;
+
+}
+
+.share img {
+    width: 30px;
+    padding-left: 10px;
+}
+
+.projects>div>p:first-of-type,
+.announcements>div>p:first-of-type {
+    font-weight: bold;
+
+}
+
+#name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.text {
+    font-size: 0.8rem;
+
+}
+
+.announcements>div>p:first-of-type {
+    font-size: 0.9rem;
+    padding-top: 15px;
+    border-top: 4px solid #DDDDDD;
+}
